@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
   name: String,
   email: { type: String, unique: true },
   password: String,
-  picture: String, // optional for Google login
+  picture: String, 
 });
 
 export default mongoose.model('User', userSchema);
